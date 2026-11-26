@@ -1,156 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GSP1 – Gepäckservice-Pfalz</title>
-
-<style>
-* {margin:0; padding:0; box-sizing:border-box; font-family:Arial, sans-serif;}
-
-header {
-  position: fixed;
-  width: 100%;
-  background: rgba(13,27,42,0.9);
-  color: white;
-  padding: 15px 30px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  z-index:1000;
-}
-
-header nav a {
-  color:white;
-  margin-left:15px;
-  text-decoration:none;
-  font-size:14px;
-}
-
-.hero {
-  height: 90vh;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-  url("https://images.unsplash.com/photo-1601584115197-04ecc0da31d7") center/cover no-repeat;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  color:white;
-  text-align:center;
-  padding:20px;
-}
-
-.hero h1 {
-  font-size:48px;
-}
-
-.hero p {
-  font-size:18px;
-  margin-top:10px;
-}
-
-.btn {
-  margin-top:20px;
-  padding:12px 24px;
-  background:#e63946;
-  color:white;
-  text-decoration:none;
-  border-radius:5px;
-}
-
-.section {
-  padding:80px 20px;
-  max-width:1100px;
-  margin:auto;
-}
-
-.cards {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-  margin-top:30px;
-}
-
-.card {
-  background:white;
-  border-radius:10px;
-  overflow:hidden;
-  box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-.card img {
-  width:100%;
-  height:160px;
-  object-fit:cover;
-}
-
-.card-content {
-  padding:15px;
-}
-
-footer {
-  background:#0d1b2a;
-  color:white;
-  text-align:center;
-  padding:30px;
-}
-</style>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Radfahren und Wandern in der Pfalz ohne Gepäck. Gepäcktransport entlang der Deutschen Weinstraße und des Kraut-und-Rüben-Radwegs.">
+  <meta name="theme-color" content="#183b35">
+  <title>Gepäckservice Pfalz – Radfahren & Wandern ohne Gepäck</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-<header>
-  <div><strong>GSP1</strong></div>
-  <nav>
-    <a href="index.html">Start</a>
-    <a href="leistungen.html">Leistungen</a>
-    <a href="ueber-uns.html">Über uns</a>
-    <a href="kontakt.html">Kontakt</a>
-  </nav>
-</header>
-
-<section class="hero">
-  <h1>Gepäckservice-Pfalz</h1>
-  <p>Sicherer & flexibler Transport für Ihr Gepäck in der Region</p>
-  <a class="btn" href="kontakt.html">Jetzt anfragen</a>
-</section>
-
-<section class="section">
-  <h2>Unsere Leistungen</h2>
-
-  <div class="cards">
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1605514449459-5c5a7b6f0f2d">
-      <div class="card-content">
-        <h3>Gepäcktransport</h3>
-        <p>Abholung und Lieferung zuverlässig zur gewünschten Adresse.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1521334884684-d80222895322">
-      <div class="card-content">
-        <h3>Hotelservice</h3>
-        <p>Direkter Gepäckservice für Hotels und Ferienwohnungen.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd">
-      <div class="card-content">
-        <h3>Event-Transport</h3>
-        <p>Schneller Service für Messen, Events und Veranstaltungen.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<footer>
-  © 2026 GSP1 – Gepäckservice-Pfalz
-</footer>
-
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Gepäckservice Pfalz – Startseite"><span class="brand-icon" aria-hidden="true">GP</span><span class="brand-copy">GEPÄCKSERVICE <b>PFALZ</b></span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Navigation öffnen"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+      <a class="active" href="index.html" aria-current="page">Start</a><a href="leistungen.html">So funktioniert's</a><a href="wandern.html">Wandern in der Pfalz</a><a class="nav-button" href="kontakt.html">Anfrage stellen <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-photo" role="img" aria-label="Radreise durch die Weinberge der Pfalz"></div>
+      <div class="container hero-content"><p class="eyebrow eyebrow-light"><span></span> Unterwegs an der Deutschen Weinstraße</p><h1>Die Pfalz erleben.<br><em>Ohne Gepäck.</em></h1><p class="hero-lead">Radfahren und wandern Sie ganz unbeschwert. Wir bringen Ihr Gepäck zur nächsten Unterkunft.</p><div class="hero-actions"><a class="button button-coral" href="kontakt.html">Transport anfragen <span aria-hidden="true">↗</span></a><a class="link-light" href="leistungen.html">So funktioniert's <span aria-hidden="true">→</span></a></div></div>
+      <div class="hero-caption"><span></span> Bockenheim — Schweigen / Wissembourg</div><div class="hero-count">01 <i></i> 04</div>
+    </section>
+    <section class="intro container section-pad"><div class="section-kicker"><span class="eyebrow">Reisen leicht gemacht</span><span class="micro-label">GEPÄCKSERVICE · PFALZ</span></div><div class="intro-main"><h2>Mehr entdecken.<br><em>Weniger tragen.</em></h2><p>Viele Gäste erkunden die Pfalz individuell mit dem Rad oder zu Fuß. Unser Gepäckservice macht’s leichter: Wir transportieren Ihr Gepäck von Unterkunft zu Unterkunft, damit Sie die Landschaft und Ihre Reise frei genießen können.</p><a class="text-link" href="leistungen.html">Unser Service im Detail <span aria-hidden="true">→</span></a></div><div class="intro-aside"><span class="spark" aria-hidden="true">✳</span><p>Sie bestimmen<br>Ihr Tempo.</p></div></section>
+    <section class="benefits section-pad"><div class="container"><div class="section-heading"><div><p class="eyebrow">Ihre Vorteile</p><h2>Die Hände frei für<br><em>schöne Erlebnisse.</em></h2></div><p class="heading-note">Reisen Sie flexibel, spontan und mit leichtem Gepäck durch die Pfalz.</p></div><div class="benefit-grid"><article class="benefit"><span class="benefit-no">01</span><span class="benefit-icon" aria-hidden="true">⌁</span><h3>Leichter unterwegs</h3><p>Sie sind nicht auf zwei Satteltaschen beschränkt und genießen Ihre Tour mit weniger Gewicht.</p></article><article class="benefit"><span class="benefit-no">02</span><span class="benefit-icon" aria-hidden="true">↗</span><h3>Flexibel bleiben</h3><p>Sie können Ihren Gepäcktransport auch kurzfristig am Vorabend für den nächsten Tag anfragen.</p></article><article class="benefit"><span class="benefit-no">03</span><span class="benefit-icon" aria-hidden="true">✳</span><h3>Mehr erleben</h3><p>Halten Sie an, genießen Sie regionale Köstlichkeiten oder machen Sie einen spontanen Abstecher.</p></article></div></div></section>
+    <section class="how-section section-pad"><div class="container how-grid"><div><p class="eyebrow eyebrow-light">Einfach organisiert</p><h2>Ihr Gepäck reist.<br><em>Sie genießen.</em></h2><p class="how-copy">Sprechen Sie Ihre Unterkunft an und stellen Sie Ihr Gepäck am Morgen bereit. Unsere Fahrer bringen es bis spätestens 16 Uhr zu Ihrem vereinbarten Ziel.</p><a class="button button-light" href="leistungen.html">Ablauf ansehen <span aria-hidden="true">→</span></a></div><div class="steps"><article><span>01</span><div><h3>Bis 16 Uhr anfragen</h3><p>Bestellen Sie den Transport für den folgenden Tag über Ihre Unterkunft oder direkt bei uns.</p></div></article><article><span>02</span><div><h3>Gepäck bereitstellen</h3><p>Stellen Sie Ihr Gepäck am nächsten Morgen ab 9 Uhr an der Rezeption oder Ihrer Unterkunft bereit.</p></div></article><article><span>03</span><div><h3>Am Ziel wiedersehen</h3><p>Bis spätestens 16 Uhr liefern wir es zu Ihrer vereinbarten Zielunterkunft.</p></div></article></div></div></section>
+    <section class="season container section-pad"><div class="season-mark" aria-hidden="true">04—10</div><div><p class="eyebrow">Saison</p><h2>Von April bis Oktober<br><em>für Sie unterwegs.</em></h2></div><div class="season-copy"><p>Unser Service ist täglich von April bis Oktober buchbar. Außerhalb dieser Zeit stimmen wir mögliche Ausnahmen gern persönlich mit Ihnen ab.</p><a class="text-link" href="kontakt.html">Verfügbarkeit anfragen <span aria-hidden="true">→</span></a></div></section>
+    <section class="route-band"><div class="container route-inner"><div><p class="eyebrow eyebrow-light">Unser Einsatzgebiet</p><h2>Die Pfalz liegt<br><em>auf Ihrem Weg.</em></h2><p>Wir bedienen Unterkünfte entlang der Deutschen Weinstraße und des Kraut-und-Rüben-Radwegs – von Bockenheim im Norden bis Schweigen oder Wissembourg im Süden.</p><a class="link-light" href="kontakt.html">Route mit uns planen <span aria-hidden="true">→</span></a></div><div class="route-graphic" role="img" aria-label="Schematische Route durch die Pfalz von Bockenheim bis Schweigen und Wissembourg"><div class="route-label route-north">BOCKENHEIM</div><div class="route-label route-mid">DEUTSCHE WEINSTRASSE</div><div class="route-label route-south">SCHWEIGEN · WISSEMBOURG</div><span class="route-dot dot-north"></span><span class="route-dot dot-mid"></span><span class="route-dot dot-south"></span><span class="route-line"></span><span class="route-river"></span></div></div></section>
+    <section class="quote-cta"><div class="container quote-inner"><span class="quote-symbol" aria-hidden="true">“</span><p>Sie haben Ihre Tour schon geplant?<br><em>Buchen Sie den Gepäcktransport für die ganze Reise.</em></p><a class="button button-coral" href="kontakt.html">Kostenloses Angebot anfragen <span aria-hidden="true">↗</span></a></div></section>
+    <section class="partner container"><p>Leihräder erhalten Sie bei unserem Partner</p><a href="https://www.palatinamobil.de" target="_blank" rel="noopener noreferrer">palatinamobil.de <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-main"><a class="brand" href="index.html"><span class="brand-icon" aria-hidden="true">GP</span><span class="brand-copy">GEPÄCKSERVICE <b>PFALZ</b></span></a><p>Radfahren und wandern<br>in der Pfalz ohne Gepäck.</p><a class="footer-call" href="tel:+491751591204">0175 – 159 12 04 <span aria-hidden="true">↗</span></a></div><div class="container footer-bottom"><span>© 2026 Gepäckservice Pfalz</span><div><a href="kontakt.html">Kontakt</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div><span>Deidesheim · Pfalz</span></div></footer>
+  <script src="script.js"></script>
 </body>
 </html>
