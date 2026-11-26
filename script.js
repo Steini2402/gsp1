@@ -2,7 +2,7 @@
 (function () {
   const css = document.createElement('link');
   css.rel = 'stylesheet';
-  css.href = 'brand-refresh.css?v=20261126-3';
+  css.href = 'brand-refresh.css?v=20261126-5';
   document.head.appendChild(css);
 
   document.querySelectorAll('.brand').forEach((brand) => {
@@ -14,8 +14,6 @@
       logo.className = 'company-logo';
       logo.src = 'logo.svg?v=20261126';
       logo.alt = 'Gepäckservice Pfalz';
-      logo.width = 184;
-      logo.height = 66;
       if (icon) icon.replaceWith(logo); else brand.prepend(logo);
     }
     if (copy) copy.remove();
