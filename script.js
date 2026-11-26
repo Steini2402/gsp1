@@ -1,18 +1,27 @@
-const refreshStyles = document.createElement('link');
-refreshStyles.rel = 'stylesheet';
-refreshStyles.href = 'brand-refresh.css';
-document.head.appendChild(refreshStyles);
+/* Cache-freies Brand-Refresh für alle Seiten */
+(function () {
+  const css = document.createElement('link');
+  css.rel = 'stylesheet';
+  css.href = 'brand-refresh.css?v=20261126-2';
+  document.head.appendChild(css);
 
-document.querySelectorAll('.brand').forEach((brand) => {
-  const mark = brand.querySelector('.brand-icon');
-  if (!mark) return;
-  const logo = document.createElement('img');
-  logo.className = 'company-logo';
-  logo.src = 'logo.svg';
-  logo.alt = 'Gepäckservice Pfalz';
-  mark.replaceWith(logo);
-  brand.querySelector('.brand-copy')?.remove();
-});
+  document.querySelectorAll('.brand').forEach((brand) => {
+    const icon = brand.querySelector('.brand-icon');
+    const copy = brand.querySelector('.brand-copy');
+
+    let logo = brand.querySelector('img.company-logo');
+    if (!logo) {
+      logo = document.createElement('img');
+      logo.className = 'company-logo';
+      logo.src = 'logo.svg?v=20261126';
+      logo.alt = 'Gepäckservice Pfalz';
+      logo.width = 184;
+      logo.height = 66;
+      if (icon) icon.replaceWith(logo); else brand.prepend(logo);
+    }
+    if (copy) copy.remove();
+  });
+})();
 
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('.main-nav');
@@ -42,9 +51,9 @@ if (form) {
       'Nachricht:',
       data.get('message')
     ].join('\n');
-    const link = `mailto:info@gsp1.de?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
     const status = document.getElementById('form-status');
-    status.textContent = 'Ihr E-Mail-Programm sollte sich jetzt mit Ihrer vorbereiteten Anfrage öffnen.';
-    window.location.href = link;
+    if (status) status.textContent = 'Ihr E-Mail-Programm sollte sich jetzt mit Ihrer vorbereiteten Anfrage öffnen.';
+    window.location.href = `mailto:info@gsp1.de?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   });
 }
