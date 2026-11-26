@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 180" role="img" aria-labelledby="title desc">
+  <title id="title">Gepäckservice Pfalz</title>
+  <desc id="desc">Logo mit Radfahrer und Wanderer vor einer Pfälzer Weinberglandschaft</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#dff0e8"/><stop offset="1" stop-color="#f9e9bd"/></linearGradient>
+    <linearGradient id="hill" x2="0" y2="1"><stop stop-color="#789b6a"/><stop offset="1" stop-color="#244b3b"/></linearGradient>
+    <clipPath id="round"><circle cx="86" cy="86" r="78"/></clipPath>
+  </defs>
+  <g clip-path="url(#round)">
+    <circle cx="86" cy="86" r="78" fill="url(#sky)"/>
+    <circle cx="129" cy="42" r="12" fill="#f2cf79"/>
+    <path d="M0 72 Q32 42 70 68 T145 61 T182 69 V180 H0Z" fill="#aac48c"/>
+    <path d="M0 92 Q44 59 83 92 T172 81 V180 H0Z" fill="#688c5c"/>
+    <path d="M0 112 Q45 77 91 110 T180 99 V180 H0Z" fill="url(#hill)"/>
+    <path d="M4 23 Q34 5 61 24 M16 12 Q28 31 44 43 M30 12 Q44 3 55 14" fill="none" stroke="#244b3b" stroke-width="6" stroke-linecap="round"/>
+    <g fill="none" stroke="#17382c" stroke-width="3">
+      <circle cx="53" cy="125" r="17"/><circle cx="99" cy="125" r="17"/><path d="M53 125 67 99 82 125 53 125 72 112 99 125 86 98 72 112M69 99h18"/>
+    </g>
+    <g fill="#17382c">
+      <circle cx="71" cy="80" r="6"/><path d="m68 87-10 15 15 9 10-13-7-10zM63 101l-12 21 5 3 15-19M76 107l8 20 5-2-4-24M65 89 53 99l3 4 14-7M76 89l13 8 3-4-12-10z"/>
+      <circle cx="121" cy="78" r="6"/><path d="m118 85-9 22 13 7 11-19-7-9zM114 108l-3 27 5 1 7-25M123 111l9 23 5-2-7-27M117 88l-9 13 4 3 11-10M127 88l10 11 4-3-9-13zM138 96l5 39"/></g>
+    <circle cx="86" cy="86" r="78" fill="none" stroke="#244b3b" stroke-width="4"/>
+  </g>
+  <text x="181" y="78" fill="#17382c" font-family="Georgia,serif" font-size="34" font-weight="700" letter-spacing="-1.6">Gepäckservice</text>
+  <text x="180" y="116" fill="#54784e" font-family="Georgia,serif" font-size="27" font-weight="700" letter-spacing="2">PFALZ</text>
+  <path d="M180 130h270" stroke="#a8ba93" stroke-width="2"/>
+  <text x="181" y="151" fill="#51665a" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="3">WWW.GSP1.DE</text>
+</svg>

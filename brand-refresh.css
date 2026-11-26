@@ -1,0 +1,85 @@
+/* Heller, freundlicher Auftritt mit Weinberg-Farbwelt */
+:root {
+  --forest: #244b3b;
+  --deep: #e8eee2;
+  --cream: #f4f1e7;
+  --paper: #fffefa;
+  --coral: #b96d43;
+  --ink: #24352d;
+  --muted: #657269;
+  --line: #d9ded3;
+}
+
+.site-header {
+  background: rgb(255 254 250 / 94%);
+  border-bottom-color: #244b3b20;
+  color: var(--forest);
+  backdrop-filter: blur(12px);
+}
+.main-nav a { color: #355342; }
+.main-nav a:hover, .main-nav a.active { color: var(--forest); }
+.main-nav .nav-button { border-color: #244b3b55; color: var(--forest); }
+.menu-toggle { border-color: #244b3b55; }
+.menu-toggle span { background: var(--forest); }
+.main-nav .nav-button span { color: var(--coral); }
+.company-logo { display: block; width: 184px; height: 66px; object-fit: contain; }
+.footer-main .company-logo { width: 184px; }
+
+.hero-photo {
+  background-image: linear-gradient(90deg, rgb(250 248 237 / 76%) 0%, rgb(250 248 237 / 49%) 49%, rgb(250 248 237 / 15%) 100%), url("https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=2200&q=85");
+  background-position: center 54%;
+}
+.hero h1, .hero h1 em { color: #244b3b; }
+.hero-lead { color: #344c40; }
+.hero .eyebrow-light { color: #395747; }
+.hero-caption, .hero-count { color: #355342; }
+.hero-count i { background: #35534275; }
+.hero-caption > span { background: var(--coral); }
+.hero-count { text-shadow: 0 1px 5px #fff8; }
+
+.page-hero {
+  background-image: linear-gradient(90deg, rgb(250 248 237 / 83%), rgb(250 248 237 / 49%)), url("https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=2000&q=85");
+  background-position: center 54%;
+  color: var(--ink);
+}
+.page-hero .eyebrow-light, .page-hero-content > p:not(.eyebrow), .page-number { color: #344c40; }
+.hiking-hero, .contact-hero {
+  background-image: linear-gradient(90deg, rgb(250 248 237 / 83%), rgb(250 248 237 / 49%)), url("https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=2000&q=85");
+}
+.hero h1 em, .page-hero h1 em { color: #8c573a; }
+
+.how-section, .booking-band, .contact-strip, .hiking-note, .site-footer {
+  background: #e7eee2;
+  color: var(--ink);
+}
+.how-section .eyebrow-light, .booking-band .eyebrow-light, .contact-strip .eyebrow-light, .hiking-note .eyebrow-light { color: #46614d; }
+.how-copy, .booking-grid > div:last-child > p, .steps p { color: #5d6e61; }
+.steps { border-color: #244b3b35; }
+.steps article { border-color: #244b3b35; }
+.steps h3 { color: var(--forest); }
+.steps article > span { color: var(--coral); }
+.booking-grid h2, .contact-strip h2, .hiking-note h2 { color: var(--ink); }
+.quote-cta { background: #f4f1e7; color: var(--ink); }
+.quote-inner > p em { color: #8c573a; }
+.site-footer { border-top: 1px solid #d9ded3; }
+.footer-main { border-bottom-color: #244b3b2b; }
+.footer-main > p, .footer-bottom { color: #647267; }
+.footer-bottom a, .footer-call { color: var(--forest); }
+.footer-call span, .footer-bottom a:hover { color: var(--coral); }
+.brand { color: var(--forest); }
+
+.button-coral { background: #a95835; }
+.button-coral:hover { background: #8f472a; }
+.text-link { color: var(--forest); }
+.route-band { background: #f4f1e7; }
+.inquiry-form { background: #f4f1e7; }
+.contact-hours { background: #eef0e6; }
+.legal-review { background: #f4f1e7; }
+
+@media (max-width: 620px) {
+  .site-header { background: rgb(255 254 250 / 97%); }
+  .company-logo { width: 154px; height: 54px; }
+  .footer-main .company-logo { width: 168px; }
+  .main-nav { background: #fffefa; box-shadow: 0 12px 20px #24352d18; }
+  .main-nav a { color: var(--forest); }
+}

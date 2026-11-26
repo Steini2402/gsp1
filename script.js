@@ -1,3 +1,19 @@
+const refreshStyles = document.createElement('link');
+refreshStyles.rel = 'stylesheet';
+refreshStyles.href = 'brand-refresh.css';
+document.head.appendChild(refreshStyles);
+
+document.querySelectorAll('.brand').forEach((brand) => {
+  const mark = brand.querySelector('.brand-icon');
+  if (!mark) return;
+  const logo = document.createElement('img');
+  logo.className = 'company-logo';
+  logo.src = 'logo.svg';
+  logo.alt = 'Gepäckservice Pfalz';
+  mark.replaceWith(logo);
+  brand.querySelector('.brand-copy')?.remove();
+});
+
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('.main-nav');
 
